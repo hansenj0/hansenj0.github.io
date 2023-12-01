@@ -1,0 +1,174 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
+/* Reset default margin and padding */
+/* Apply basic styling */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #000000;
+    padding: 1.25rem; 
+}
+
+/* Header styles */
+header {
+    text-align: center;  
+    padding: 0.625rem; 
+    transform: rotate(-5deg);
+}
+
+/* Header word styles */
+h1 span.highlight {
+    font-size: 1.5rem; 
+    border: 0.125rem solid rgb(227, 6, 139); 
+    padding: 0.3125rem; 
+    background-color: rgb(227, 6, 139);
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 0.625rem; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main section styles */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    flex: 2;
+    background-color: #fff;
+    padding: 1.25rem;
+    margin-right: 1.25rem; 
+}
+
+aside {
+    flex: 0 0 20%;
+    background-color: #f5f5f5;
+    padding: 1.25rem; 
+    border-left: 0.125rem solid black;
+}
+aside p {
+    border-bottom: 0.125rem solid black;
+    padding-bottom: 1.25rem; 
+}
+p {
+    margin-bottom: 0.9375rem; 
+}
+/* Subsection styles */
+.subsection {
+    display: flex;
+    gap: 10px;
+}
+
+.subsection figure {
+    margin: 0;
+    flex: 1;
+}
+
+/* Image styles */
+.article-image img {
+    width: 15.625rem; 
+    height: auto;
+    margin-right: 1.25rem; 
+    float: left;
+}
+
+.subsection img {
+    width: 12.5rem; 
+    height: auto;
+}
+
+aside img {
+    width: 10rem;
+    height: auto;
+   
+}
+/* Footer styles */
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 1.25rem; 
+    margin-top: 1.25rem; 
+    clear: both;
+}
+
+/* Attribution link styles */
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Circle hyperlink styles */
+.expand {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem; 
+    margin-right: 0.3125rem; 
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.expand:hover {
+    transform: scale(1.2);
+}
